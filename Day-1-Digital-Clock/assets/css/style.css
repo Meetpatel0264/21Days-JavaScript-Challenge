@@ -1,0 +1,53 @@
+  body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s;
+  }
+
+  .light {
+      background: linear-gradient(135deg, #1d2b64, #f8cdda);
+      color: white;
+  }
+
+  .dark {
+      background: #121212;
+      color: white;
+  }
+
+  .card-box {
+      padding: 30px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.1);
+      text-align: center;
+      width: 350px;
+  }
+
+  .time {
+      font-size: 45px;
+      font-weight: bold;
+  }
+
+  .glow {
+      animation: glow 1s infinite alternate;
+  }
+
+  .hr {
+      border: none;
+      height: 1px;
+      margin: 5px 0;
+      background-color: rgb(194, 187, 187);
+      width: 100%;
+  }
+
+  @keyframes glow {
+      from {
+          text-shadow: 0 0 10px white;
+      }
+
+      to {
+          text-shadow: 0 0 25px cyan;
+      }
+  }

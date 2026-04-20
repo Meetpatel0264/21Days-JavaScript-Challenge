@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    
+    <link rel="shortcut icon" href="./assets/img/clock.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <style>
+
+    </style>
+</head>
+
+<body class="light">
+
+    <div class="card-box shadow-lg">
+        <h3>Digital Clock</h3>
+
+        <div id="greet" class="mb-2"></div>
+
+        <div id="time" class="time glow"></div>
+        <div id="date" class="mb-2"></div>
+
+         <div class="hr"></div>
+
+        <div id="zones" class="mb-3"></div>
+
+         <div class="hr"></div>
+
+        <input type="time" id="alarmInput" class="form-control mb-2" placeholder="Alarm">
+        <button onclick="setAlarm()" class="btn btn-warning w-100">Set Alarm</button>
+
+        <div class="hr"></div>
+
+        <button id="themeBtn" class="btn btn-light w-100">Toggle Theme</button>
+        <button onclick="stopAlarm()" class="btn btn-danger w-100 mt-2">
+            Stop Alarm
+        </button>
+    </div>
+
+    <audio id="alarmSound" preload="auto">
+        <source src="./assets/song/clock.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
