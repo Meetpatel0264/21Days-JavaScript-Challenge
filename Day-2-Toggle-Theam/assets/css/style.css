@@ -1,0 +1,83 @@
+ * {
+     transition: all 0.3s ease;
+ }
+
+ body {
+     min-height: 100vh;
+     background: linear-gradient(135deg, #ffffff, #e6e6e6);
+     color: #111;
+     overflow: hidden;
+ }
+
+ body.dark-theme {
+     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+     color: #fff;
+ }
+
+ .glass-nav {
+     background: rgba(255, 255, 255, 0.6);
+ }
+
+ .dark-theme .glass-nav {
+     background: rgba(0, 0, 0, 0.5);
+ }
+
+ .glass-card {
+     width: 100%;
+     background: rgba(255, 255, 255, 0.4);
+     border-radius: 20px;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+     padding: 40px;
+     max-width: 400px;
+ }
+
+
+
+ .dark-theme .glass-card {
+     background: rgba(0, 0, 0, 0.4);
+ }
+
+ .switch {
+     position: relative;
+     width: 60px;
+     height: 30px;
+ }
+
+ .switch input {
+     display: none;
+ }
+
+ .slider {
+     position: absolute;
+     cursor: pointer;
+     background: #ccc;
+     border-radius: 30px;
+     width: 100%;
+     height: 100%;
+ }
+
+ .slider::before {
+     content: "";
+     position: absolute;
+     height: 24px;
+     width: 24px;
+     left: 3px;
+     top: 3px;
+     background: white;
+     border-radius: 50%;
+     transition: 0.3s;
+ }
+
+ input:checked+.slider {
+     background: #111;
+ }
+
+ input:checked+.slider::before {
+     transform: translateX(30px);
+ }
+
+ .theme-btn {
+     border-radius: 50%;
+     font-size: 18px;
+     padding: 8px 12px;
+ }
