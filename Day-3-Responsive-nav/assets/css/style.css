@@ -1,0 +1,116 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        transition: all 0.3s ease;
+    }
+
+    header {
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(10px);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    nav ul li {
+        position: relative;
+        cursor: pointer;
+    }
+
+    nav ul li::after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background: #ff5a6e;
+        transition: 0.3s;
+    }
+
+    nav ul li:hover::after {
+        width: 100%;
+    }
+
+    .hero {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .offcanvas {
+        width: 260px !important;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(15px);
+        color: white;
+    }
+
+    .offcanvas-body li {
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .offcanvas-body li:hover {
+        background: #ff5a6e;
+        transform: translateX(5px);
+    }
+
+    .btn-close {
+        filter: invert(1);
+    }
+
+    body.dark {
+        background: #121212;
+        color: white;
+    }
+
+    body.dark header {
+        background: rgba(0, 0, 0, 0.9);
+    }
+
+    .hero {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body.dark .mini-card {
+        background: #2a2a2a;
+        color: white;
+    }
+
+    .mini-card {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .mini-card::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(120deg, transparent, rgba(255, 90, 110, 0.3), transparent);
+        top: 0;
+        left: -100%;
+        transition: 0.5s;
+    }
+
+    .mini-card:hover::before {
+        left: 100%;
+    }
+
+    .mini-card:hover {
+        transform: translateY(-10px) scale(1.04);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    }
