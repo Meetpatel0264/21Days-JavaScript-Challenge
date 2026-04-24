@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <!-- link css -->
+    <link rel="stylesheet" href="./assets/css/media.css">
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!---------------------------------------- Header Start ---------------------------------------->
+
+    <header class="header-bg position-sticky">
+        <div class="container">
+            <div class="header d-flex justify-content-between align-items-center">
+                <a href="./index.html" class="text-decoration-none" title="logo">
+                    <div class="logo pointer">
+                        <img src="./assets/img/logo-01.png" height="60px" width="60px" class="img-fluid" alt="">
+                    </div>
+                </a>
+                <nav class="nav-bar d-none d-lg-block">
+                    <ul class="d-flex gap-xl-5 gap-4 list-unstyled m-0">
+                        <li class="header-li pointer position-relative">
+                            <a href="#about" class="text-decoration-none text-white">About Us</a>
+                        </li>
+                        <li class="header-li pointer position-relative">
+                            <a href="#services" class="text-decoration-none text-white">Service</a>
+                        </li>
+                        <li class="header-li pointer position-relative">
+                            <a href="#work" class="text-decoration-none text-white">Work</a>
+                        </li>
+                        <li class="header-li pointer position-relative">
+                            <a href="#resume" class="text-decoration-none text-white">Resume</a>
+                        </li>
+                        <li class="header-li pointer position-relative">
+                            <a href="#skills" class="text-decoration-none text-white">Skills</a>
+                        </li>
+                        <li class="header-li pointer position-relative">
+                            <a href="#testimonials" class="text-decoration-none text-white">Testimonials</a>
+                        </li>
+                        <li class="header-li pointer position-relative">
+                            <a href="#contact" class="text-decoration-none text-white">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="head-btn">
+                    <a href="#contact" class="text-decoration-none text-white">
+                        <button class="header-btn">
+                            Hire Me!
+                        </button>
+                    </a>
+                    <i class="ri-menu-2-line fs-2 d-lg-none" value="btn" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#staticBackdrop"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!---------------------------------------- Header End ---------------------------------------->
+
+    <!---------------------------------------- Main Start ---------------------------------------->
+    <main>
+
+        <!---------------------------------------- Contact Section-1 Start ---------------------------------------->
+
+        <section class="form-section form-bg d-flex align-items-center justify-content-center" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-10">
+                        <div class="form p-sm-5 p-4 text-center">
+                            <div class="mb-2">
+                                <h2 class="form-heading">Let’s work together!</h2>
+                                <p class="form-contect">I design and code beautifully simple things and I love what I
+                                    do. Just simple like that!</p>
+                                <form id="contactForm">
+                                    <div class="row gy-4">
+                                        <div class="col-lg-6">
+                                            <input type="text" required id="first" name="firstName"
+                                                placeholder="First name"
+                                                class="w-100 p-3 rounded-3 border info-form ps-3">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <input type="text" required id="last" name="lastName"
+                                                placeholder="Last name"
+                                                class="w-100 p-3 rounded-3 border info-form ps-3">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <input type="email" id="mail" required name="mail"
+                                                placeholder="Email Address"
+                                                class="w-100 p-3 rounded-3 border info-form ps-3">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <input type="number" id="num" required name="number"
+                                                placeholder="Phone Number"
+                                                class="w-100 p-3 rounded-3 border info-form ps-3">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <input type="password" id="passw" required name="pass"
+                                                placeholder="Password"
+                                                class="w-100 p-3 rounded-3 border info-form ps-3">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <input type="password" id="password" required name="confirmPassword"
+                                                placeholder="Confirm Password"
+                                                class="w-100 p-3 rounded-3 border info-form ps-3">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <input type="date" id="dob" required name="dob" placeholder="Date of Birth"
+                                                class="w-100 p-3 rounded-3 border info-form ps-3">
+                                        </div>
+
+
+                                        <div class="col-lg-6">
+                                            <select class="w-100 rounded-3 p-3 px-4 info-form" id="slct" name="select" title="name">
+                                                <option>Select an option</option>
+                                                <option>Branding Design</option>
+                                                <option>Web Design</option>
+                                                <option>UI/UX Design</option>
+                                                <option>App Design</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-lg-6 d-flex align-items-center justify-content-around">
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="gender" id="male"
+                                                    value="Male" required name="radio">
+                                                <label class="form-check-label" for="male">Male</label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="gender" id="female"
+                                                    value="Female" required name="radio">
+                                                <label class="form-check-label" for="female">Female</label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="gender" id="other"
+                                                    value="Other" required name="radio">
+                                                <label class="form-check-label" for="other">Other</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <textarea placeholder="Message" class="w-100 info-form p-3" rows="3"
+                                                name="message" id="message"></textarea>
+                                        </div>
+
+                                        <div class="col-12 text-center">
+                                            <button type="button" class="rounded-pill send-button py-3 px-4"
+                                                id="submitBtn" name="btn">Send
+                                                Message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <!---------------------------------------- Contact Section-1 End ---------------------------------------->
+
+    <!---------------------------------------- Main End ---------------------------------------->
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="./assets/js/jquart.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            let firstName = document.getElementById("first");
+            let lastName = document.getElementById("last");
+            let email = document.getElementById("mail");
+            let pass = document.getElementById("passw");
+            let cpass = document.getElementById("password");
+            let number = document.getElementById("num");
+            let dob = document.getElementById("dob");
+            let select = document.getElementById("slct");
+            let male = document.getElementById("male");
+            let female = document.getElementById("female");
+            let other = document.getElementById("other");
+            let message = document.getElementById("message");
+            let form = document.getElementById("contactForm");
+            let btn = document.getElementById("submitBtn");
+
+            let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            let passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/;
+            let phoneRegex = /^[0-9]{10}$/;
+
+            $(".send-button").on("click", function (e) {
+                e.preventDefault();
+
+                if (firstName.value.trim() === "") {
+                    firstName.focus();
+                    Swal.fire("First Name is required ✍️");
+                    return;
+                }
+
+                if (lastName.value.trim() === "") {
+                    lastName.focus();
+                    Swal.fire("Last Name is required ✍️");
+                    return;
+                }
+
+                if (!emailRegex.test(email.value)) {
+                    Swal.fire("Please enter a valid email address. 📧");
+                    return;
+                }
+
+                if (!phoneRegex.test(number.value)) {
+                    Swal.fire("Please enter a valid 10-digit phone number 📱.");
+                    return;
+                }
+
+                if (!passwordRegex.test(pass.value)) {
+                    Swal.fire("Password must be strong: 8+ chars, uppercase, lowercase, number & special character👆.");
+                    return;
+                }
+
+                if (pass.value !== cpass.value) {
+                    Swal.fire("Passwords do not match👆.");
+                    return;
+                }
+                if (dob.value === "") {
+                    Swal.fire("Please enter your Date of Birth 🎂.");
+                    return;
+                } else {
+                    let enteredDate = new Date(dob.value);
+                    let today = new Date();
+
+                    if (enteredDate > today) {
+                        Swal.fire("Please enter a valid Date of Birth. Future dates are not allowed. Only 18+ users can register. 🎂");
+                        return;
+                    }
+
+                    let age = today.getFullYear() - enteredDate.getFullYear();
+                    let m = today.getMonth() - enteredDate.getMonth();
+                    if (m < 0 || (m === 0 && today.getDate() < enteredDate.getDate())) {
+                        age--;
+                    }
+
+                    if (age < 18) {
+                        Swal.fire("Access denied! 🚫 Only 18+ users can register.");
+                        return;
+                    }
+                }
+
+                if (select.value === "Select an option") {
+                    Swal.fire("Please select a valid option.");
+                    return;
+                }
+
+
+                let gender;
+                if (male.checked) {
+                    gender = male.value;
+                } else if (female.checked) {
+                    gender = female.value;
+                } else if (other.checked) {
+                    gender = other.value;
+                } else {
+                    gender = null;
+                }
+
+                if (!gender) {
+                    Swal.fire("Please select your gender 👤");
+                    return;
+                }
+
+                if (message.value.trim().length < 1) {
+                    Swal.fire("Message field cannot be empty! 🛑");
+                    return;
+                }
+
+                Swal.fire({
+                    icon: "success",
+                    title: "Success!",
+                    text: "Great! Your request has been submitted.🎉🎊🎉",
+                    timer: 2500,
+                }).then(() => {
+                    form.scrollIntoView({ behavior: "smooth" });
+                    form.reset();
+                });
+            });
+        });
+    </script>
+
+     <script>
+    flatpickr("#dob", { dateFormat: "Y-m-d" });
+  </script>
+
+
+
+
+</body>
+
+</html>

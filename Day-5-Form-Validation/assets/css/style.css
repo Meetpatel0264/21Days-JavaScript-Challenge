@@ -1,0 +1,227 @@
+* {
+    color: #FFFFFF;
+    font-family: 'REM';}
+
+:root {
+    --header-bg-black: #050709;
+    --text-purpule: #0f0715;
+    --text-light-gray: #DDDDDD;
+    --bg-light-purple: #140c1c;
+    --border-light: #2a1454;
+    --border-hover-light: #8750f7;
+    --border-white: #e5e7eb;
+    --white: #FFFFFF;
+    --border-color: #22272c;
+    --color-light-dark: #191919;
+    --color-light-white: #fff;
+
+    --transition: all 0.3s linear;
+}
+
+.bg-black {
+    background-color: var(--header-bg-black);
+}
+
+.bg-gradiant {
+    background-color: var(--text-purpule);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/************************ Header Start ************************/
+
+.header-bg {
+    background-color: var(--text-purpule);
+}
+
+.header-btn {
+    background-color: transparent;
+    padding: 12px 35px;
+    border-radius: 100px;
+    border: none;
+    margin: 5px;
+    -webkit-transition: all 0.3s linear !important;
+    -o-transition: all 0.3s linear !important;
+    transition: all 0.3s linear !important;
+    border: 2px solid var(--border-hover-light);
+    color: var(--border-hover-light);
+    opacity: 1;
+    /* transition-duration: 0.3s !important; */
+}
+
+.header-btn:hover {
+    color: var(--color-light-white);
+    -webkit-transition: all 0.3s linear !important;
+    -o-transition: all 0.3s linear !important;
+    transition: all 0.3s linear !important;
+    background-color: var(--border-hover-light);
+}
+
+.header-li:hover::after {
+    cursor: pointer;
+    width: 100%;
+}
+
+.header-li::after {
+    content: '';
+    position: absolute;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    background-color: var(--border-hover-light);
+    bottom: 0;
+}
+
+.header-all:hover::after {
+    cursor: pointer;
+    width: 100%;
+}
+
+.header-all::after {
+    content: '';
+    position: absolute;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    background-color: var(--color-light-white);
+    bottom: 0;
+}
+
+.py-100 {
+    padding: 100px 0;
+}
+
+header{
+    z-index: 998;
+    top: 0;
+}
+
+
+
+/************************ Header End ************************/
+
+/************************ Contact Section-8 Start ************************/
+
+.form-bg {
+    background-color: rgb(5 7 9 / var(--tw-bg-opacity, 1));
+    --tw-bg-opacity: 1;
+    padding: 120px 0;
+}
+
+.form-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* full screen height */
+    text-align: center;
+}
+
+.form {
+    background-color: #140c1c;
+    border-radius: 5px;
+}
+
+.form-heading {
+    color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+    font-size: 45px;
+    margin-bottom: 15px;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #8750f7), to(#fff));
+    background-image: -o-linear-gradient(left, #8750f7 0, #fff);
+    background-image: linear-gradient(90deg, #8750f7 0, #fff);
+}
+
+.form-contect {
+    color: rgb(221 221 221 / var(--tw-text-opacity, 1));
+    font-size: 18px;
+}
+
+.info-form {
+    --tw-bg-opacity: 1;
+    background-color: rgb(5 7 9 / var(--tw-bg-opacity, 1));
+    border: 0.1px solid var(--border-color) !important;
+}
+
+.send-button {
+    background-color: transparent;
+    padding: 12px 35px;
+    border-radius: 100px;
+    border: 2px solid var(--border-hover-light);
+    color: var(--border-hover-light);
+    margin: 5px;
+    -webkit-transition: all 0.3s linear !important;
+    -o-transition: all 0.3s linear !important;
+    transition: all 0.3s linear !important;
+    opacity: 1;
+}
+
+.send-button:hover {
+    background-color: var(--border-hover-light);
+    color: var(--color-light-white);
+}
+
+.contect-me {
+    padding-left: 50px;
+}
+
+.connect-by-with {
+    background-color: var(--border-hover-light);
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 20px;
+    
+}
+
+.form{
+    transition: all 0.3s linear;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px rgba(196, 166, 255, 0.437);
+}
+
+
+/************************ Contact Section-8 End ************************/
+
+.get-my-touch input,
+textarea {
+    background-color: transparent;
+    border: 1px solid;
+    border-color: #1b2024;
+}
+
+.form:hover {
+    transform: translateY(10px);
+    box-shadow: none;
+    transition: all 0.4s ease;
+}
+
+.info-form:focus,
+textarea:focus {
+    outline: none;
+    border-color: #8750f7;
+    box-shadow: 0 0 10px rgba(135, 80, 247, 0.5);
+    transition: all 0.3s ease;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove spinner for Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.flatpickr-current-month input.cur-year{
+    color: black;
+}
