@@ -1,0 +1,41 @@
+
+body {
+    background: linear-gradient(135deg,#0f2027,#203a43);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+.todo-box {
+    width:420px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(20px);
+    padding:25px;
+    border-radius:20px;
+}
+
+.todo-item {
+    background:rgba(255,255,255,0.08);
+    padding:15px;
+    border-radius:15px;
+    margin-top:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    transition:0.3s;
+}
+
+.todo-item:hover {
+    transform:translateY(-3px);
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity:0.6;
+}
+
+.badge-high { background:#ff4d4d; }
+.badge-medium { background:#ffb02e; }
+.badge-low { background:#4cd964; }
