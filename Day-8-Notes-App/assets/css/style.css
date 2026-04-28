@@ -1,0 +1,33 @@
+
+body {
+    background: linear-gradient(135deg,#0f2027,#203a43);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+.app {
+    width:450px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(15px);
+    padding:25px;
+    border-radius:20px;
+}
+
+.note {
+    background:rgba(255,255,255,0.08);
+    padding:15px;
+    border-radius:15px;
+    margin-top:15px;
+    transition:0.3s;
+}
+
+.note:hover {
+    transform:translateY(-3px);
+}
+
+textarea {
+    resize:none;
+}
