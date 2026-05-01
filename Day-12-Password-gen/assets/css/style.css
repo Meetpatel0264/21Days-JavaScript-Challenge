@@ -1,0 +1,103 @@
+  body {
+            background: radial-gradient(circle at top, #0f2027, #000000);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff !important;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 420px;
+            padding: 25px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.15);
+        }
+
+        .title {
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .password-box {
+            display: flex;
+            gap: 10px;
+        }
+
+        .password-box input {
+            background: transparent;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .password-box input:focus {
+            box-shadow: none;
+            border-color: cyan;
+        }
+
+        .btn-generate {
+            background: linear-gradient(45deg, cyan, blue);
+            border: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn-generate:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px cyan;
+        }
+
+        .copy-btn {
+            background: linear-gradient(45deg, #00ffaa, #00ccff);
+            border: none;
+            color: black;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 20px;
+        }
+
+        .copy-btn:hover {
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 0 15px #00ffaa, 0 0 25px #00ccff;
+        }
+
+        .copy-btn:active {
+            transform: scale(0.95);
+            box-shadow: 0 0 5px #00ffaa;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            background: cyan;
+        }
+
+        .form-check-input {
+            cursor: pointer;
+        }
+
+        .strength-container {
+            height: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 12px;
+        }
+
+        .strength-bar {
+            height: 100%;
+            width: 0%;
+            transition: 0.4s;
+        }
+
+        .small-text {
+            text-align: center;
+            font-size: 12px;
+            opacity: 0.6;
+            margin-top: 10px;
+        }
