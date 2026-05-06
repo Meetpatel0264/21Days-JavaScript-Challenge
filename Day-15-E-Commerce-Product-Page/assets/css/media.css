@@ -1,0 +1,38 @@
+@media (max-width : 1200px) {}
+
+@media (max-width : 992px) {
+    .sec-col {
+        padding: 0 !important;
+    }
+}
+
+@media (max-width : 768px) {
+    .hero-title h2 {
+        font-size: 60px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .sec-5 {
+        padding: 70px 0 !important;
+    }
+
+
+}
+
+@media (max-width : 576px) {
+     .sec-5 {
+        padding: 70px 0 !important;
+    }
+}
+
+@media (max-width : 440px) {
+    .font-size-sec-2 {
+        font-size: 10px;
+    }
+
+     .sec-5 {
+        padding: 40px 0 !important;
+    }
+}
+
+@media (max-width : 320px) {}
