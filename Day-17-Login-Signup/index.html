@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Auth UI</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- LEFT PANEL -->
+
+    <div class="left-panel">
+
+      <div class="content">
+
+        <div class="tag">
+          Secure Authentication System
+        </div>
+
+        <h1>
+          Welcome Back
+        </h1>
+
+        <p>
+          Build modern authentication UI with validation
+          and localStorage using HTML, CSS & JavaScript.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+
+    <div class="right-panel">
+
+      <div class="form-box">
+
+        <!-- TOGGLE -->
+
+        <div class="toggle-buttons">
+          <button class="toggle-btn active" id="loginBtn">
+            Login
+          </button>
+
+          <button class="toggle-btn" id="signupBtn">
+            Signup
+          </button>
+        </div>
+
+        <!-- LOGIN FORM -->
+
+        <form id="loginForm" class="form active-form">
+
+          <h2>Login Account</h2>
+
+          <p class="form-subtitle">
+            Enter your credentials to access your account
+          </p>
+
+          <div class="input-group">
+            <label>Email</label>
+            <input type="email" id="loginEmail" placeholder="Enter your email">
+          </div>
+
+          <div class="input-group">
+            <label>Password</label>
+            <input type="password" id="loginPassword" placeholder="Enter your password">
+          </div>
+
+          <button type="submit" class="submit-btn">
+            Login
+          </button>
+
+          <p class="message" id="loginMessage"></p>
+
+        </form>
+
+        <!-- SIGNUP FORM -->
+
+        <form id="signupForm" class="form">
+
+          <h2>Create Account</h2>
+
+          <p class="form-subtitle">
+            Create your account and start your journey
+          </p>
+
+          <div class="input-group">
+            <label>Full Name</label>
+            <input type="text" id="signupName" placeholder="Enter your name">
+          </div>
+
+          <div class="input-group">
+            <label>Email</label>
+            <input type="email" id="signupEmail" placeholder="Enter your email">
+          </div>
+
+          <div class="input-group">
+            <label>Password</label>
+            <input type="password" id="signupPassword" placeholder="Create password">
+          </div>
+
+          <div class="input-group">
+            <label>Confirm Password</label>
+            <input type="password" id="confirmPassword" placeholder="Confirm password">
+          </div>
+
+          <button type="submit" class="submit-btn">
+            Signup
+          </button>
+
+          <p class="message" id="signupMessage"></p>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+<script src="./assets/js/script.js"></script>
+
+</body>
+</html>
